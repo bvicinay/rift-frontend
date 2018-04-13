@@ -261,13 +261,13 @@ table td:nth-child(2) {
 .session-card .bottom-details .time span {
     float: left;
 }
-.join-area {
+.session-card .join-area {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     height: 100%;
 }
-.join-area img {
+.session-card .join-area img {
     width: 100px;
 }
 
