@@ -1,0 +1,159 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<link rel="stylesheet" href="profile.css" type="text/css">
+<link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600" rel="stylesheet">
+<title>Profile</title>
+</head>
+
+<body id="profile-header">
+<div id="header">
+    <div id="overview">
+        <div class="headshot"></div>
+        <div id="basic-details"> <span class="name">Borja Vicinay</span>
+            <div class="following-btn">Following</div>
+            <br>
+            <span class="username">@borjavicinay</span> </div>
+        <div id="user-stats">
+            <div class="stat-item"><span id="following" class="stat">346</span><br>
+                <label>following</label>
+            </div>
+            <div class="stat-item"><span id="followers" class="stat">346</span><br>
+                <label>followers</label>
+            </div>
+            <div class="stat-item"><span id="rating" class="stat">346</span><br>
+                <label>rating</label>
+            </div>
+        </div>
+    </div>
+    <div id="tabs">
+        <div class="tab tab-active">Activity</div>
+        <div class="tab">Sessions</div>
+        <div class="tab">Ratings</div>
+        <div class="tab">Info</div>
+    </div>
+</div>
+
+<div class="section">
+    <div class="session-card">
+       <div class="date-area">
+           <span class="month">Feb</span>
+           <span class="day">26</span>
+       </div>
+       <div class="main-area">
+           <span class="title">Quick Scope sniping tutorial</span><br>
+           <span class="user">by Borja Vicinay</span>
+           <div class="rating"></div>
+           <div class="bottom-details">
+               <img src="fortnite" alt="">
+               <div class="time"><img src="clock" alt=""> 12pm - 1pm</div>
+           </div>
+       </div>
+       <div class="join-area">
+           <img src="xbox" alt="">
+           <button>Join</button>
+       </div>
+    </div>
+</div>
+<div class="section" id="info">
+    <div class="sidemenu">
+        <a id="details-btn" class="menu-active" onclick="menuShow(this.id)">Details about you</a>
+        <a id="contact-info-btn" onclick="menuShow(this.id)">Contact Info</a>
+        <a id="game-accounts-btn" onclick="menuShow(this.id)">Game Accounts</a>
+    </div>
+    <div class="content-card" id="details">
+        <div class="segment">
+            <span class="title">About Me</span>
+            <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla.</p>
+        </div>
+        <div class="segment">
+            <span class="title">Basic Information</span>
+            <table>
+                <tbody>
+                    <tr>
+                        <td>Email</td>
+                        <td>bvicinay@gmail.com</td>
+                    </tr>
+                    <tr>
+                        <td>PO Box</td>
+                        <td>159 5th St NW</td>
+                    </tr>
+                    <tr>
+                        <td>Business Email</td>
+                        <td>ninja@twitch.com</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <div class="content-card hide" id="contact-info">
+        <div class="segment">
+            <span class="title">Contact</span>
+            <table>
+                <tbody>
+                    <tr>
+                        <td>Date of Birth</td>
+                        <td>04/16/1998</td>
+                    </tr>
+                    <tr>
+                        <td>Age</td>
+                        <td>19</td>
+                    </tr>
+                    <tr>
+                        <td>Gender</td>
+                        <td>Male</td>
+                    </tr>
+                    <tr>
+                        <td>Time Zone</td>
+                        <td>US East (EST)</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div class="segment">
+            <span class="title">Social</span>
+            <table>
+                <tbody>
+                    <tr>
+                        <td>Twitch</td>
+                        <td>Borja Vicinay</td>
+                    </tr>
+                    <tr>
+                        <td>Youtube</td>
+                        <td>Fortnite Streaming</td>
+                    </tr>
+                    <tr>
+                        <td>Twitter</td>
+                        <td>@bvicinay</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+        <div class="content-card hide" id="game-accounts">
+        <div class="segment">
+            <span class="title">Accounts</span>
+            <p>Account card here</p>
+            <p>Account card here</p>
+            <p>Account card here</p>
+        </div>
+    </div>
+</div>
+<script type="text/javascript">
+    // About Section Sidemenu script
+    var currSection = "details";
+    function menuShow(btnId) {
+        var id = btnId.substring(0, btnId.length-4);
+        console.log(id);
+        document.getElementById(currSection).classList.add("hide");
+        document.getElementById(currSection + "-btn").classList.remove("menu-active");
+        document.getElementById(id).classList.remove("hide");
+        document.getElementById(btnId).classList.add("menu-active");
+        currSection = id;        
+    }
+</script>
+</body>
+
+</html>

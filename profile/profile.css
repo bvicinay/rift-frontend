@@ -1,0 +1,216 @@
+@charset "utf-8";
+/* CSS Document */
+
+* {
+    border: 0px red solid;
+}
+
+body {
+    background-color: #1B2531;
+    color: #F7F7F2;
+    font-family: "Montserrat", sans-serif;
+}
+
+#profile-header {
+    margin: 0px auto;
+    width: 840px;
+    
+}
+#profile-header #overview {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    background-color: #2E3E4F;
+    border: 1px #18202A solid;
+    
+}
+
+#profile-header #overview .headshot {
+    margin: 42px 15px 35px 40px;
+    display: inline-block;
+    order: 0;
+    
+}
+#profile-header #overview #basic-details{
+    order: 1;
+    margin-top: 52px;
+}
+
+#profile-header #overview #user-stats {
+    order: 2;
+    display: inline-block;
+    align-self: center;
+    padding: 0px 20px;
+    margin-left: 30px;
+}
+.stat-item {
+    display: inline-block;
+    margin: 0px 10px;
+    width: 70px;
+    height: auto;
+}
+.stat-item .stat {
+    font-size: 35px;
+    color: #F6511D;
+    text-align: center;
+    width: 100%;
+    display: inline-block;
+    
+}
+.stat-item label {
+    font-size: 13px;
+    text-align: center;
+    position: relative;
+    top: -7px;
+    width: 100%;
+    display: inline-block;
+}
+.name {
+    font-size: 27px;
+    margin-right: 10px;
+}
+.username {
+    font-size: 17px;
+    font-weight: 500;
+    opacity: 0.7;
+}
+
+.headshot {
+    width: 106px;
+    height: 106px;
+    border-radius: 53px;
+    background-image: url(Jason%20Davis%20headshot.jpg);
+    background-size: contain;
+}
+.following-btn {
+    padding: 5px;
+    color: #F7F7F2;
+    font-weight: 500;
+    display: inline-block;
+    background-color: #1DA1F2;
+    margin: 0px 5px;
+    zoom: 0.8;
+    transform: translateY(-3px);
+}
+
+#profile-header #tabs {
+    width: 100%;
+    height: 45px;
+    background-color: #22303F;
+    border: 1px #18202A solid;
+    border-top: 0px black solid;
+    display: flex;
+    justify-content: space-between;
+}
+.tab {
+    display: block;
+    text-transform: uppercase;
+    width: 210px;
+    height: 45px;
+    text-align: center;
+    line-height: 45px;
+    vertical-align: middle;
+}
+.tab-active {
+    /**outline: 5px #1DA1F2 solid;
+    outline-offset: -5px;*/
+    box-shadow: inset 0px -5px 0px 0px #1DA1F2;
+}
+.section {
+    margin-top: 20px;
+    background-color: #2E3E4F;
+    width: 840px;
+    border: 0px #18202A solid;
+    overflow: hidden;
+    display: flex;
+}
+.sidemenu {
+    width: 240px;
+    background-color: #22303F;
+    border-right: 1px #18202A solid;
+    padding: 17px 0px;
+    order: 0;
+}
+.sidemenu a {
+    display: block;
+    padding: 5px 25px;
+    cursor: pointer;
+    margin: 15px 0px;
+
+}
+.menu-active {
+    font-weight: 600;
+    
+}
+.content-card {
+    padding: 33px;
+    width: 533px;
+    display: inline-block;
+    order: 1;
+}
+.segment {
+    padding: 0px 0px 35px 0px;
+    
+}
+.segment .title {
+    text-transform: uppercase;
+    font-size: 17px;
+    display: block;
+    margin-bottom: 12px;
+    font-weight: 500;
+}
+.segment p {
+    font-size:15px;
+    opacity: 0.8;
+    margin: 0px 0px;
+    line-height: 20px;
+}
+table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 15px;
+}
+table td {
+    border-top: 0.2px rgba(255,255,255, 0.2) solid;
+    border-bottom: 0.2px rgba(255,255,255, 0.2) solid;
+    padding: 9px 6px;
+}
+table td:first-child {
+    font-weight: 300;
+}
+table td:nth-child(2) {
+    font-weight:500;
+}
+.hide {
+    display: none;
+}
+.session-card {
+    height: 280px;
+    width: 100%;
+    background-color: #2E3E4F;
+    border: #2E3E4F;
+    display: flex;
+    flex-direction: row;
+    
+}
+.session-card>div {
+    border: 1px red solid;
+}
+.date-area {
+    width: 80px;
+}
+.date-area .month {
+    text-transform: uppercase;
+    font-size: 20px;
+    display: block;
+    text-align: center;
+}
+.date-area .day {
+    display:block;
+    font-size: 15px;
+    text-align: center;
+}
+
+
