@@ -28,10 +28,74 @@
         </div>
     </div>
     <div id="tabs">
-        <div class="tab tab-active">Activity</div>
-        <div class="tab">Sessions</div>
-        <div class="tab">Ratings</div>
-        <div class="tab">Info</div>
+        <div href="#activity" class="tab tab-active">Activity</div>
+        <div href="#sessions" class="tab">Sessions</div>
+        <div href="#ratings" class="tab">Ratings</div>
+        <div href="#info" class="tab">Info</div>
+    </div>
+</div>
+<div class="section" id="ratings">
+    <div class="sidemenu"> <a id="details-btn" class="menu-active" onclick="menuShow(this.id)">Overview</a> <a id="contact-info-btn" onclick="menuShow(this.id)">Rifter Rating</a> <a id="game-accounts-btn" onclick="menuShow(this.id)">Riftee Rating</a> </div>
+    <div class="content-card" id="details">
+        <div class="segment" id="overall-ratings">
+            <div class="rating-feature"> <span class="title">Rifter Rating</span>
+               <span class="big-score green">4.2</span>
+                <div class="rating-bar"> <span class="score green" >3.7</span>
+                    <div class="shadow"></div>
+                    <div class="fill green-bck" style="width: 45%;"></div>
+                    <table border="1">
+                        <tbody>
+                            <tr>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <a href="" class="reviews-shortcut">327 Reviews »</a> </div>
+            <div class="rating-feature"> <span class="title">Riftee Rating</span>
+               <span class="big-score orange">3.7</span>
+                <div class="rating-bar"> <span class="score">3.7</span>
+                    <div class="shadow"></div>
+                    <div class="fill orange-bck" style="width: 72%;"></div>
+                    <table border="1">
+                        <tbody>
+                            <tr>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <a href="" class="reviews-shortcut">327 Reviews »</a> </div>
+        </div>
+        <div class="segment"><span class="title">Featured</span>
+            <div class="rating-card">
+                <div class="card-header"><a class="username">borjavicinay</a> on <span class="timestamp">4/16/18</span></div>
+                <div class="rating-bar"> <span class="score">3.7</span>
+                    <div class="shadow"></div>
+                    <div class="fill" style="width: 72%"></div>
+                    <table border="1">
+                        <tbody>
+                            <tr>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
+            </div>
+        </div>
     </div>
 </div>
 <div class="section" id="activity">
@@ -161,7 +225,6 @@
     var currSection = "details";
     function menuShow(btnId) {
         var id = btnId.substring(0, btnId.length-4);
-        console.log(id);
         document.getElementById(currSection).classList.add("hide");
         document.getElementById(currSection + "-btn").classList.remove("menu-active");
         document.getElementById(id).classList.remove("hide");
