@@ -5,6 +5,7 @@
 <link rel="stylesheet" href="profile.css" type="text/css">
 <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600" rel="stylesheet">
+<script src="scripts.js"></script>
 <title>Profile</title>
 </head>
 
@@ -156,39 +157,39 @@
                 <tbody>
                     <tr>
                         <td>Email</td>
-                        <td>bvicinay@gmail.com</td>
+                        <td><input type="text" value="bvicinay@gmail.com"></td>
                     </tr>
                     <tr>
                         <td>PO Box</td>
-                        <td>159 5th St NW</td>
+                        <td><input type="text" value="159 5th St NW"></td>
                     </tr>
                     <tr>
                         <td>Business Email</td>
-                        <td>ninja@twitch.com</td>
+                        <td><input type="text" value="ninja@twitch.com"></td>
                     </tr>
                 </tbody>
             </table>
         </div>
     </div>
     <div class="content-card hide" id="contact-info">
-        <div class="segment"> <span class="title">Contact</span>
+        <div class="segment"><span class="title">Contact</span>
             <table>
                 <tbody>
                     <tr>
                         <td>Date of Birth</td>
-                        <td>04/16/1998</td>
+                        <td><input type="text" value="04/16/1998"></td>
                     </tr>
                     <tr>
                         <td>Age</td>
-                        <td>19</td>
+                        <td class="not-editable">19</td>
                     </tr>
                     <tr>
                         <td>Gender</td>
-                        <td>Male</td>
+                        <td><input type="text" value="Male"></td>
                     </tr>
                     <tr>
                         <td>Time Zone</td>
-                        <td>US East (EST)</td>
+                        <td><input type="text" value="US East (EST)"></td>
                     </tr>
                 </tbody>
             </table>
@@ -198,15 +199,15 @@
                 <tbody>
                     <tr>
                         <td>Twitch</td>
-                        <td>Borja Vicinay</td>
+                        <td class="not-editable">Borja Vicinay</td>
                     </tr>
                     <tr>
                         <td>Youtube</td>
-                        <td>Fortnite Streaming</td>
+                        <td class="not-editable">Fortnite Streaming</td>
                     </tr>
                     <tr>
                         <td>Twitter</td>
-                        <td>@bvicinay</td>
+                        <td class="not-editable">@bvicinay</td>
                     </tr>
                 </tbody>
             </table>
@@ -230,17 +231,6 @@
         
     </div>
 </div>
-<script type="text/javascript">
-    // About Section Sidemenu script
-    var currSection = "details";
-    function menuShow(btnId) {
-        var id = btnId.substring(0, btnId.length-4);
-        document.getElementById(currSection).classList.add("hide");
-        document.getElementById(currSection + "-btn").classList.remove("menu-active");
-        document.getElementById(id).classList.remove("hide");
-        document.getElementById(btnId).classList.add("menu-active");
-        currSection = id;        
-    }
-</script>
+
 </body>
 </html>
