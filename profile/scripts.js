@@ -5,15 +5,22 @@ var editBtnSet = false;
 // Edit personal info functions
 function disableEdit() {
     var sec_inputs=document.getElementById('info').getElementsByTagName('input');
-    for(i=0;i<sec_inputs.length;i++){
+    sec_inputs.concat(document.getElementById('info').getElementsByTagName('select'));
+    for(var i=0;i<sec_inputs.length;i++){
         sec_inputs[i].disabled=true;
     }    
 }
 function enableEdit(){
-    sec_inputs=document.getElementById(currSection).getElementsByTagName('input');
-    for(i=0;i<sec_inputs.length;i++){
+    var sec_inputs=document.getElementById(currSection).getElementsByTagName('input');
+    sec_inputs.concat(document.getElementById('info').getElementsByTagName('select'));
+    for(var i=0;i<sec_inputs.length;i++){
         sec_inputs[i].disabled=false;
-    } 
+    }
+    
+    var currContent = "details"; // Change for details page pointer 
+    
+    var submitDiv = "<div class='submit-changes'><button class='save'>save</button><button class='cancel'>cancel</button></div>";
+    document.getElementById(currContent).insertAdjacentHTML('beforeend', submitDiv); // append sve/cancel buttons here
 }
 
 // About Section Sidemenu 

@@ -208,23 +208,24 @@ table td {
 table td:first-child {
     font-weight: 300;
 }
-table td input {
+table td input, table td select {
     font-weight: 500;
-    background-color: transparent;
     display: inline;
     font-size: 15px;
     color: white;
     font-family: "Montserrat", sans-serif;
-    width: 120px;
+    width: 180px;
     padding: 5px;
 }
 table .not-editable {
-    padding: 10px 6px;
-    
-    
+    padding: 10px 6px;    
 }
-table td input:enabled {
-    background-color: #ffffff12;
+
+table td input:disabled, table td select:disabled {
+    background-color: transparent;
+}
+table td input:enabled, table td select:enabled {
+    background-color: #3d4c5b;
 }
 
 .hide {
@@ -489,3 +490,27 @@ table td input:enabled {
     text-decoration: none;
     
 }
+.submit-changes {
+    display: block;
+    width: 100%;
+    text-align: center; 
+    margin-top: 20px;
+}
+.submit-changes button {
+    padding: 2px;
+    padding: 3px 8px;
+    font-size: 16px;
+    cursor: pointer;
+    margin: 0px 3px;
+    text-transform:capitalize;
+}
+.submit-changes button.save {
+    background-color: #F7F7F2;    
+}
+.submit-changes button.cancel {
+    background-color: transparent;
+    border: 1px #F7F7F2 solid;
+    color: #F7F7F2;
+}
+
+
