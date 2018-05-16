@@ -1,0 +1,201 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="profile.css" type="text/css">
+        <link rel="stylesheet" href="search.css" type="text/css">
+        <link rel="stylesheet" href="session.css" type="text/css">
+        <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link href="https://fonts.googleapis.com/css?family=Lato:300,400,500,700|Raleway|Roboto" rel="stylesheet">
+        <link rel="stylesheet" href="https://use.typekit.net/jjn5jrt.css">
+        <link rel="stylesheet" href="jquery-ui.min.css"></script>
+        <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+        <script type="text/javascript" src="jquery-ui.min.js"></script>
+        <script src="scripts.js"></script>
+        <title>Session Details</title>
+    </head>
+    <body id="search-page">
+        <nav>
+            <div id="nav-wrapper">
+                <div class="logo">
+                    <img src="rift_logo_trans.png"/>
+                    <h1>RIFT</h1>
+                </div>
+                <div class="search-bar">
+                    <img src="search_icon.svg">
+                    <select>
+                        <option value="Session">Session</option>
+                        <option value="People">People</option>
+                    </select>
+                    <input type="text" name="query" value="fortnite match">
+                </div>
+                <div class="menu">
+                    <a href="feed.html">Feed</a><img class="dot" src="dot.svg">
+                    <a href="sessions.html">Sessions</a><img class="dot" src="dot.svg">
+                    <a href="notifications.html" class="notifs-icon"><img src="bell_icon.svg"></a><img class="dot" src="dot.svg">
+                    <a class="profile-block" href="profile.html">
+                        <img src="pic.jpg"/>
+                        <span>Gordon</span>
+                    </a>
+                </div>
+            </div>
+        </nav>
+        <div class="section" id="session">
+            <div class="header">
+                <h1>Quick fort building tutorial</h1>
+                <span class="author">Created by <strong>Borja Vicinay</strong></span>
+                <div class="request-accepted">
+                    <img src="check.svg"><span>Your request has been accepted</span>
+                </div>
+            </div>
+            <div class="box" id="details">
+                <div class="options">
+                    <div class="share-btn">
+                        <img src="share-icon.svg" alt="">
+                        Share
+                    </div>
+                    <img src="options-icon.svg" alt="" class="options-btn">
+                </div>
+                <div class="date">
+                    <div class="day"><span class="number">26</span><span class="weekday">MON</span></div>
+                    <div class="month">August</div>
+                    <div class="time">12pm to 1pm</div>
+                </div>
+                <p class="description">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. </p>
+                <div class="info">
+                    <div class="lang-tag">English</div>
+                    <div class="game">Fortnite</div>
+                <img class="console" src="xbox.svg"/></div>
+            </div>
+            <div class="box" id="players">
+                <div class="options">
+                    <div class="manage-players">Manage</div>
+                </div>
+                <div class="title">Players</div>
+                <table class="player-list">
+                    <tr>
+                        <td>
+                            <div class="player-card">
+                                <img src="pic.jpg" alt="" class="profile-pic"/>
+                                <div class="text">
+                                    <span class="name">Gordon Li</span>
+                                    <span class="username">@gordonli</span>
+                                </div>
+                            </div>
+                        </td>
+                        <td><div class="player-card">
+                            <img src="pic.jpg" alt="" class="profile-pic"/>
+                            <div class="text">
+                                <span class="name">Borja Vicinay</span>
+                                <span class="username">@bvicinay</span>
+                            </div>
+                        </div></div></td>
+                    </tr>
+                    <tr>
+                        <td><div class="player-card">
+                            <img src="pic.jpg" alt="" class="profile-pic"/>
+                            <div class="text">
+                                <span class="name">Riley Auten</span>
+                                <span class="username">@rileyauten345</span>
+                            </div>
+                        </div></div></td>
+                        <td><div class="player-add">
+                            <span class="link">+ add player</span>
+                            <span class="price">$10</span>
+                        </div></div></td>
+                    </tr>
+                </table>
+            </div>
+            <div class="box" id="activity">
+                <div class="options"></div>
+                <div class="title">Activity</div>
+                <div class="post-input-area">
+                    <img src="pic.jpg" alt="" class="profile-pic">
+                    <textarea rows="1" placeholder="Write something..."></textarea>
+
+                </div>
+                <div class="posts">
+                    <div class="post">
+                        <img src="pic.jpg" alt="" class="profile-pic">
+                        <div class="post-info">
+                            <div class="top-info">
+                                <span class="name">Borja Vicinay</span><span class="timestamp">6 min ago</span>
+                            </div>
+                            <p class="post-text">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor!</p>
+                            <div class="post-buttons">
+                                <a href="#" class="reply">Reply</a>
+                                <a href="#" class="like">Like</a>
+                                <span class="likes">4</span>
+                            </div>
+                        </div>
+                        
+                    </div>
+                    <div class="post">
+                        <img src="pic.jpg" alt="" class="profile-pic">
+                        <div class="post-info">
+                            <div class="top-info">
+                                <span class="name">Gordon Li</span><span class="timestamp">16 min ago</span>
+                            </div>
+                            <p class="post-text">Lets play!</p>
+                            <div class="post-buttons">
+                                <a href="#" class="reply">Reply</a>
+                                <a href="#" class="like liked">Liked</a>
+                                <span class="likes">4</span>
+                            </div>
+                        </div>
+                        
+                    </div>
+                    <div class="post">
+                        <img src="pic.jpg" alt="" class="profile-pic">
+                        <div class="post-info">
+                            <div class="top-info">
+                                <span class="name">Borja Vicinay</span><span class="timestamp">6 min ago</span>
+                            </div>
+                            <p class="post-text">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor!</p>
+                            <div class="post-buttons">
+                                <a href="#" class="reply">Reply</a>
+                                <a href="#" class="like">Like</a>
+                                <span class="likes">4</span>
+                            </div>
+                        </div>
+                        
+                    </div>
+                    <div class="post">
+                        <img src="pic.jpg" alt="" class="profile-pic">
+                        <div class="post-info">
+                            <div class="top-info">
+                                <span class="name">Borja Vicinay</span><span class="timestamp">6 min ago</span>
+                            </div>
+                            <p class="post-text">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor!</p>
+                            <div class="post-buttons">
+                                <a href="#" class="reply">Reply</a>
+                                <a href="#" class="like">Like</a>
+                                <span class="likes">4</span>
+                            </div>
+                        </div>
+                        
+                    </div>
+                    
+                    
+                </div>
+                <span class="more-posts">Show all posts</span>
+            </div>
+
+
+
+            
+        </div>
+        
+        <script>
+        $(".player-add").hover(
+            function() {
+            $(this).children(".price").animate({width: "25px", opacity: "0.6"})
+        }, function() {
+            $(this).children(".price").animate({width: "0px", opacity: "0"})
+        })
+        
+        </script>
+    </body>
+</html>

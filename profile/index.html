@@ -1,0 +1,194 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="profile.css" type="text/css">
+        <link rel="stylesheet" href="search.css" type="text/css">
+        <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link href="https://fonts.googleapis.com/css?family=Lato:300,700|Raleway|Roboto" rel="stylesheet">
+        <link rel="stylesheet" href="jquery-ui.min.css"></script>
+        <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+        <script type="text/javascript" src="jquery-ui.min.js"></script>
+        <script src="scripts.js"></script>
+        <title>Search Results</title>
+    </head>
+    <body id="search-page">
+        <nav>
+            <div id="nav-wrapper">
+                <div class="logo">
+                    <img src="rift_logo_trans.png"/>
+                    <h1>RIFT</h1>
+                </div>
+                <div class="search-bar">
+                    <img src="search_icon.svg">
+                    <select>
+                        <option value="Session">Session</option>
+                        <option value="People">People</option>
+                    </select>
+                    <input type="text" name="query" value="fortnite match">
+                </div>
+                <div class="menu">
+                    <a href="feed.html">Feed</a><img class="dot" src="dot.svg">
+                    <a href="sessions.html">Sessions</a><img class="dot" src="dot.svg">
+                    <a href="notifications.html" class="notifs-icon"><img src="bell_icon.svg"></a><img class="dot" src="dot.svg">
+                    <a class="profile-block" href="profile.html">
+                        <img src="pic.jpg"/>
+                        <span>Gordon</span>
+                    </a>
+                </div>
+                
+            </div>
+            
+            
+        </nav>
+        <div id="search-area">
+            <div class="filter-menu">
+                <span class="subtitle">Filter results by</span>
+                <div class="filter-group">
+                    <span class="title">Game</span>
+                    <div class="option"><input type="checkbox" checked name="Fortnite"><label>Fortnite</label></div>
+                    <div class="option"><input type="checkbox" name="League of Legends"><label>League of Legends</label></div>
+                    <div class="option"><input type="checkbox" name="Call of Duty: Black Ops"><label>Call of Duty: Black Ops</label></div>
+                </div>
+                <div class="filter-group">
+                    <span class="title">Min Rating</span>
+                    <div id="rating-slider">
+                        <div id="custom-handle" class="ui-slider-handle"></div>
+                    </div>
+                    <div id="slider-val"></div>
+                </div>
+                <div class="filter-group" id="tag-filters">
+                    <span class="title">Console</span>
+                    <div class="filter-tag selected" onClick="toggleFilter(this)">Play Station</div>
+                    <div class="filter-tag selected" onClick="toggleFilter(this)">PC</div>
+                    <div class="filter-tag selected" onClick="toggleFilter(this)">XBOX</div>
+                    <div class="filter-tag" onClick="toggleFilter(this)">Wii U</div>
+                    <div class="filter-tag" onClick="toggleFilter(this)">iPhone</div>
+                    <div class="filter-tag" onClick="toggleFilter(this)">Nintendo Switch</div>
+                </div>
+            </div>
+            <div class="section" id="search-results">
+                <div class="header">
+                    <span id="num-sessions"><strong>354</strong> sessions found</span>
+                    <span id="results-page-info">1 – 50 of 354 results</span>
+                    <div id="sort-trigger">
+                        <span>Sort by: </span>
+                        <select>
+                            <option value="date">Date</option>
+                            <option value="rating">Rating</option>
+                            <option value="slots">Slots</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="result-cards">
+                    <div class="session-card">
+                        <div class="date-area"> <span class="month">Feb</span> <span class="day">26</span> </div>
+                        <div class="main-area">
+                            <span class="title">Quick fort building tutorial</span><br>
+                            <span class="user">by Borja Vicinay</span>
+                            <div class="rating"></div>
+                            <div class="bottom-details"> <img src="fortnite_logo.png" alt="">
+                                <div class="time"><img src="clock.svg" alt=""><span>12pm - 1pm</span> </div>
+                            </div>
+                        </div>
+                        <div class="join-area"> <img src="xbox_logo.svg" alt="">
+                            <button>Join</button>
+                        </div>
+                    </div>
+                    <div class="session-card">
+                        <div class="date-area"> <span class="month">Feb</span> <span class="day">26</span> </div>
+                        <div class="main-area">
+                            <span class="title">Quick fort building tutorial</span><br>
+                            <span class="user">by Borja Vicinay</span>
+                            <div class="rating"></div>
+                            <div class="bottom-details"> <img src="fortnite_logo.png" alt="">
+                                <div class="time"><img src="clock.svg" alt=""><span>12pm - 1pm</span> </div>
+                            </div>
+                        </div>
+                        <div class="join-area"> <img src="xbox_logo.svg" alt="">
+                            <button>Join</button>
+                        </div>
+                    </div>
+                    <div class="session-card">
+                        <div class="date-area"> <span class="month">Feb</span> <span class="day">26</span> </div>
+                        <div class="main-area">
+                            <span class="title">Quick fort building tutorial</span><br>
+                            <span class="user">by Borja Vicinay</span>
+                            <div class="rating"></div>
+                            <div class="bottom-details"> <img src="fortnite_logo.png" alt="">
+                                <div class="time"><img src="clock.svg" alt=""><span>12pm - 1pm</span> </div>
+                            </div>
+                        </div>
+                        <div class="join-area"> <img src="xbox_logo.svg" alt="">
+                            <button>Join</button>
+                        </div>
+                    </div>
+                    <div class="session-card">
+                        <div class="date-area"> <span class="month">Feb</span> <span class="day">26</span> </div>
+                        <div class="main-area">
+                            <span class="title">Quick fort building tutorial</span><br>
+                            <span class="user">by Borja Vicinay</span>
+                            <div class="rating"></div>
+                            <div class="bottom-details"> <img src="fortnite_logo.png" alt="">
+                                <div class="time"><img src="clock.svg" alt=""><span>12pm - 1pm</span> </div>
+                            </div>
+                        </div>
+                        <div class="join-area"> <img src="xbox_logo.svg" alt="">
+                            <button>Join</button>
+                        </div>
+                    </div>
+                    <div class="session-card">
+                        <div class="date-area"> <span class="month">Feb</span> <span class="day">26</span> </div>
+                        <div class="main-area">
+                            <span class="title">Quick fort building tutorial</span><br>
+                            <span class="user">by Borja Vicinay</span>
+                            <div class="rating"></div>
+                            <div class="bottom-details"> <img src="fortnite_logo.png" alt="">
+                                <div class="time"><img src="clock.svg" alt=""><span>12pm - 1pm</span> </div>
+                            </div>
+                        </div>
+                        <div class="join-area"> <img src="xbox_logo.svg" alt="">
+                            <button>Join</button>
+                        </div>
+                    </div>
+                </div>
+                <div id="load-more">
+                    <span>Load more</span><br>
+                    <span class="fa">&#xf107;</span>
+                </div>
+                
+            </div>
+        </div>
+        
+        <script>
+        function toggleFilter(element) {
+        if ($(element).hasClass("selected")) {
+        $("#tag-filters").append(element);
+        } else {
+        $(element).insertAfter($("#tag-filters>.title"));
+        }
+        $(element).toggleClass("selected");
+        }
+        $( function() {
+        var valHolder = $("#slider-val");
+        $( "#rating-slider" ).slider({
+        orientation: "horizontal",
+        range: "min",
+        value: 3.0,
+        min: 0.0,
+        max: 5.0,
+        step: 0.1,
+        create: function() {
+        valHolder.text("3.0+");
+        },
+        slide: function( event, ui ) {
+        valHolder.text( ui.value+"+" );
+        }
+        });
+        } );
+        
+        </script>
+    </body>
+</html>

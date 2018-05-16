@@ -1,0 +1,312 @@
+#session {
+	width: 790px;
+	margin-top: 70px;
+	padding-bottom: 50px;
+}
+.header h1 {
+	margin: 5px 0px;
+	font-family: "Proxima Nova", sans-serif;
+    font-weight: 600;
+    font-size: 38px;
+}
+.header .author {
+	font-size: 15px;
+	opacity: 0.65;
+	margin: 4px 0px;
+	display: block;
+	padding-left: 4px;
+}
+.header .author strong {
+	font-weight: 500;
+}
+
+.header .request-accepted {
+	color: #39C97C;
+	font-weight: 500;
+	margin: 3px 0px;
+	font-size: 15px;
+	padding-left: 4px;
+}
+.header .request-accepted img {
+	display: inline-block;
+	position: relative;
+	top: 2px;
+	height: 15px;
+	margin-right: 6px;
+}
+.box {
+	width: 100%;
+	color: white;
+	box-sizing: border-box;
+	margin-top: 15px;
+	padding: 23px 10px 20px 7px;
+	border-top: 1px #232f3c solid;
+}
+
+.box#players, .box#details {
+	border-top: none;
+}
+.box#details {
+	background-color: #1E2B38;
+	background-color: #22303FA4;
+	padding: 20px 25px;
+}
+.box#details .date>* {
+	display: block;
+	margin: 0px 0px;
+}
+.box#details .date .day .number {
+	font-size: 46px;
+	font-family: "sofia-pro", sans-serif;
+	display: inline-block;
+	line-height: 41px;
+	font-weight: 500;
+}
+.box#details .date .day .weekday {
+	font-family: "Lato", sans-serif;
+	vertical-align: top;
+	opacity: 0.7;
+	display: inline-block;
+	position: relative;
+	top: 6px;
+	left: 5px;
+}
+.box#details .date .month {
+	font-family: "sofia-pro", sans-serif;
+	font-weight: 400;
+	font-size: 19.5px;
+	line-height: 25px;
+	margin-bottom: 4px;
+}
+.box#details .date .time {
+	color: #1DA1F2;
+}
+.box .options {
+	float: right;
+	opacity: 0.95;
+	font-size: 14px;
+}
+.box .options>* {
+	cursor: pointer;
+}
+.box .options .share-btn {
+	display: inline-block;
+}
+
+.box .options .share-btn img {
+	height: 12px;
+	margin-top: 3px;
+}
+.box .options .options-btn {
+	height: 6px;
+	vertical-align: middle;
+	margin-left: 12px;
+	display: inline-block;
+}
+.box#details p {
+	display: inline-block;
+	line-height: 1.4;
+}
+.lang-tag {
+	display: inline-block;
+	background-color: #1DA1F2;
+	padding: 5px;
+	border-radius: 2px;
+	font-weight:  400;
+	height: 19px;
+}
+.box#details .info {
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-start;
+}
+.box#details .info>* {
+	margin-right: 18px;
+	align-self: center;
+}
+.box#details .info .game {
+	display: inline-block;
+	font-size: 23px;
+	font-weight: 500;
+	font-family:  "proxima nova", sans-serif;
+}
+.box#details .info img {
+	height: 26px;
+}
+.box .title {
+	text-transform: uppercase;
+	font-family: "proxima nova", sans-serif;
+	font-weight: 500;
+	opacity: 0.72;
+	margin-bottom: 13px;
+	font-size: 18px;
+}
+
+.box .players {
+	border: 1px white solid;
+}
+.player-list {
+	padding: 20px;
+	border: none;
+	max-width: 550px;
+}
+.player-list td {
+	padding: 15px 10px;
+	border: none;
+}
+
+.player-add {
+	transition: all 0.3s ease;
+	display: flex;
+	justify-content: center;
+	height: 50px;
+	cursor: pointer;
+	border-radius: 5px;
+}
+.player-add .link {
+	align-self: center;
+	color: #1DA1F2;
+	font-weight: 400;
+}
+.player-add .price {
+	align-self: center;
+	opacity: 0; /* 0.6 */
+	width: 0px; /* 25px */
+	overflow: hidden;
+	margin-left: 8px;
+}
+.player-add:hover {
+	box-shadow: 0px 0px 30px 0 rgba(0,0,0, 0.3);
+}
+
+.player-card {
+	display: flex;
+	justify-content: flex-start;
+	height: 50px;
+
+}
+.player-card .profile-pic {
+	align-self: center;
+}
+.profile-pic {
+	border-radius: 50%;
+	height: 50px;
+	display: inline-block;
+}
+.player-card .text {
+	display: inline-block;
+	align-self: center;
+	display: flex;
+	flex-direction: column;
+	margin-left: 10px;
+}
+.player-card .name {
+	display: block;
+	font-size: 20px;
+	align-self: flex-start;
+	font-weight: 500;
+
+}
+.player-card .username {
+	display: block;
+	font-size: 15px;
+	align-self: flex-start;
+	font-weight: 400;
+	opacity: 0.7;
+}
+.post-input-area {
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-start;
+	padding: 0px 0px;
+	margin-top: 25px;
+}
+.post-input-area .profile-pic {
+	align-self: center;
+}
+.post-input-area textarea {
+	align-self: center;
+	resize: none;
+	margin: 0px 10px;
+	background-color: #18202A;
+	padding: 10px 12px;
+	font-size: 17px;
+	font-weight: 400;
+	color: white;
+	width: 100%;
+	min-height: 50px;
+	font-family:  "Lato", sans-serif;
+	vertical-align: middle;
+	box-sizing: border-box;
+	letter-spacing: 0.3px;
+}
+.post-input-area textarea::placeholder {
+	color: white;
+	opacity: 0.7;
+	font-weight: 300;
+	font-family:  "Lato", sans-serif;
+}
+.post {
+	display: flex;
+	flex-direction: row;
+	margin: 35px 0px;
+}
+.post .profile-pic {
+	align-self: flex-start;
+}
+.post .post-info {
+	display: flex;
+	flex-direction: column;
+	margin-left: 15px;
+}
+.post .post-info .top-info {
+	font-family: "Lato", sans-serif;
+}
+.post .post-info .top-info span {
+	display: inline-block;
+}
+.post .post-info .top-info span.name {
+	color: white;
+	font-size: 17px;
+}
+.post .post-info .top-info span.timestamp {
+	color: white;
+	opacity: 0.8;
+	font-size: 15px;
+	font-weight: 300;
+}
+.post .post-info p {
+	margin: 7px 0px 9px 0px;
+	font-weight: 300;
+	opacity: 1;
+}
+.post .post-info .post-buttons a{
+	display: inline-block;
+	text-decoration: none;
+	font-weight: 500;
+	margin-right: 11px;
+	color: white;
+	opacity: 0.7;
+	font-size: 15px;
+
+}
+.post .post-info .post-buttons .like.liked {
+	color: #1DA1F2;
+	opacity: 1;
+}
+.post .post-info .post-buttons .likes {
+	font-weight: 300;
+	opacity: 0.6;
+	font-size: 15px;
+	margin-left: -5px;
+
+}
+.more-posts {
+	display: block;
+	text-align: center;
+	width: 100%;
+	font-size: 15px;
+	font-family: "Lato", sans-serif;
+	cursor: pointer;
+	margin-top: 40px;
+}
